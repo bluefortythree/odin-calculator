@@ -1,9 +1,10 @@
 #parent {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     outline: none;
-    font-size: 50px;
+    margin-top: 100px;
 }
 
 #main-bottom {
@@ -12,10 +13,28 @@
 }
 
 #screen {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 150px;
-    line-height: 150px;
+}
+
+#input {
+    height: 50px;
+    line-height: 50px;
     text-align: end;
+    padding-right: 25px;
+    outline: none;
+    font-size: 20px;
+}
+
+#result {
+    height: 100px;
+    line-height: 100px;
+    text-align: end;
+    padding-right: 25px;
+    outline: none;
+    font-size: 60px;
 }
 
 #buttons {
@@ -33,16 +52,20 @@
     line-height: 100px;
 }
 
+.number {
+    color: red;
+}
+
 #bottom {
     display: flex;
 }
 
-.zero {
+#zero {
     width: 200px;
     height: 100px;
     line-height: 100px;
 }
-.decimal {
+#decimal {
     width: 100px;
     height: 100px;
     line-height: 100px;
@@ -63,6 +86,11 @@
     width: 100px;
     height: 200px;
     line-height: 200px;
+}
+
+button {
+    font-size: 30px;
+    font-weight: 800;
 }
 
 div {

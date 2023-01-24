@@ -10,34 +10,37 @@
 </head>
 <body>
     <div id="parent">
-        <div id="screen">123456</div>
+        <div id="screen">
+            <div id="input"></div>
+            <div id="result">0</div>
+        </div>
         <div id="buttons">
             <div id="main-bottom">
                 <div id="main">
                     <div class="row">
-                        <button class="column">C</button>
+                        <button id="clear" class="column">C</button>
                         <button class="column">/</button>
                         <button class="column">*</button>
                     </div>
                     <div class="row">
-                        <button class="column">7</button>
-                        <button class="column">8</button>
-                        <button class="column">9</button>
+                        <button class="column number">7</button>
+                        <button class="column number">8</button>
+                        <button class="column number">9</button>
                     </div>
                     <div class="row">
-                        <button class="column">4</button>
-                        <button class="column">5</button>
-                        <button class="column">6</button>
+                        <button class="column number">4</button>
+                        <button class="column number">5</button>
+                        <button class="column number">6</button>
                     </div>
                     <div class="row">
-                        <button class="column">1</button>
-                        <button class="column">2</button>
-                        <button class="column">3</button>
+                        <button class="column number">1</button>
+                        <button class="column number">2</button>
+                        <button class="column number">3</button>
                     </div>
                 </div>
                 <div id="bottom">
-                    <button class="zero">0</button>
-                    <button class="decimal">.</button>
+                    <button id="zero" class="number">0</button>
+                    <button id="decimal">.</button>
                 </div>
             </div>
             <div id="right">
@@ -45,8 +48,7 @@
                 <button id="plus">+</button>
                 <button id="equals">=</button>
             </div>
-            </div>
-    
+        </div>
         </div>
         
     </div>

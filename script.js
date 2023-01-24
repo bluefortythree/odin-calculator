@@ -3,11 +3,6 @@ subtract = (a,b) => a-b;
 multiply = (a,b) => a*b;
 divide = (a,b) => a/b;
 
-// console.log(add(4,5));
-// console.log(subtract(4,5));
-// console.log(multiply(4,5));
-// console.log(divide(4,5));
-
 function operate(operator, a, b) {
     if(operator === add) {
         console.log(add(a,b));
@@ -22,5 +17,26 @@ function operate(operator, a, b) {
     }
     }
 
+    const input = document.getElementById('input');
+    // const buttons = document.querySelectorAll('button').forEach(e => e.addEventListener('click', () => {
+    //     console.log(e.textContent);
+    //     input.append(e.textContent);
+    // }));
 
-operate(divide, 10, 15);
+    // the three dots is called spread operator which converts the nodelist into an array
+
+    let numberClicked = 0;
+
+    [...document.getElementsByClassName('number')].forEach(e => e.addEventListener('click', () => {
+        if(numberClicked<9) {
+            console.log(e.textContent);
+            input.append(e.textContent);
+            numberClicked++
+        }
+    }));
+
+    const clear = document.getElementById('clear');
+    clear.addEventListener('click', () => {
+        console.log("Hello World")
+    })
+    
