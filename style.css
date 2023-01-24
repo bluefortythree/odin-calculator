@@ -1,0 +1,70 @@
+#parent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    outline: none;
+    font-size: 50px;
+}
+
+#main-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+#screen {
+    width: 400px;
+    height: 150px;
+    line-height: 150px;
+    text-align: end;
+}
+
+#buttons {
+    display: flex;
+    outline: none;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#bottom {
+    display: flex;
+}
+
+.zero {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+}
+.decimal {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#negative {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+}
+#plus,
+#equals {
+    width: 100px;
+    height: 200px;
+    line-height: 200px;
+}
+
+div {
+    outline: 1px solid black;
+}
